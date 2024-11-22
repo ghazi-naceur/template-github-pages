@@ -1,3 +1,20 @@
+### Compile
+
+To generate `main.js` for local dev, use the following command:
+```shell
+sbt fastOptJS
+```
+The `main.js` file will be generated under `target/web/main.js`.
+
+To generate `main.js` for production environment, use the following command:
+```shell
+sbt fullOptJS
+```
+The `main.js` file will be generated under `docs/main.js`, along with `index.html`. This `docs` folder will be used for 
+setting the Github Pages.
+
+### Github Pages
+
 This is how to set Github Pages:
 
 1- Go to your repository on GitHub.
